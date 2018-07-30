@@ -1,0 +1,25 @@
+SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
+SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
+SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
+
+CREATE SCHEMA IF NOT EXISTS `db_pi` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci ;
+USE `db_pi` ;
+
+-- -----------------------------------------------------
+-- Table `db_pi`.`tb_cadastro`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `db_pi`.`tb_cadastro` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `nomefunc` VARCHAR(45) NULL,
+  `nomeemp` VARCHAR(45) NULL,
+  `cargo` VARCHAR(45) NULL,
+  `email` VARCHAR(45) NULL,
+  `login` VARCHAR(45) NULL,
+  `senha` VARCHAR(45) NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB;
+
+
+SET SQL_MODE=@OLD_SQL_MODE;
+SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
+SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;

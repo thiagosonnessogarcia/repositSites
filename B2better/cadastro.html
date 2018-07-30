@@ -1,0 +1,259 @@
+<html>
+<head>
+
+<meta charset="UTF-8">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+
+</script>
+
+
+
+<style>
+
+body {
+		background: #eb01a5;
+		background-image: url("bg-pattern.png"), linear-gradient(to left top, #666, #eb01a5);
+		
+}
+
+
+.no-fixed {
+	margin-left: 450px;
+
+
+}
+
+.button-center {
+	margin-left: 180px;
+
+}
+
+</style>
+
+
+
+<title> Formulário B2Better </title>
+
+ <script type="text/javascript">
+            function validar()
+            {
+                var login = document.getElementById("login");
+                var senha = document.getElementById("senha");
+                var email = document.getElementById("email");
+                var nomeemp = document.getElementById("nomeemp");
+                var nomefunc = document.getElementById("nomefunc");
+                var cargo = document.getElementById("cargo");
+                
+              if(login!=='d')
+                {
+                    alert("O campo senha deve ser preenchido!");
+                    senha.focus();
+                    return false;
+                }
+                if(senha.value =="")
+                {
+                    alert("O campo senha deve ser preenchido!");
+                    senha.focus();
+                    return false;
+                }
+                if(email.value =="")
+                {
+                    alert("O campo email deve ser preenchido!");
+                    email.focus();
+                    return false;
+                }
+                if(nomeemp.value =="")
+                {
+                    alert("O campo nome da empresa deve ser preenchido!");
+                    nomeemp.focus();
+                    return false;
+                }
+                if(nomefunc.value =="")
+                {
+                    alert("O campo nome do funcionario deve ser preenchido!");
+                    nomefunc.focus();
+                    return false;
+                }
+                if(cargo.value =="")
+                {
+                    alert("O campo cargo deve ser preenchido!");
+                    cargo.focus();
+                    return false;
+                }
+                return true;
+                
+            }
+        </script>
+</head>
+
+
+
+<body>
+
+   
+
+<!-- Special version of Bootstrap that only affects content wrapped in .bootstrap-iso -->
+<link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" /> 
+
+<!--Font Awesome (added because you use icons in your prepend/append)-->
+<link rel="stylesheet" href="https://formden.com/static/cdn/font-awesome/4.4.0/css/font-awesome.min.css" />
+
+<!-- Inline CSS based on choices in "Settings" tab -->
+<style>.bootstrap-iso .formden_header h2, .bootstrap-iso .formden_header p, 
+.bootstrap-iso form{font-family: Arial, Helvetica, sans-serif; color: black}.bootstrap-iso form button, 
+.bootstrap-iso form button:hover{color: white !important;} .asteriskField{color: red;}</style>
+
+
+<font color="white">
+<center><h3>Formulário </h3></center>
+</font>
+
+<br>
+ <form method="POST" action="cadastrar.php">
+<div class="no-fixed">
+<!-- HTML Form (wrapped in a .bootstrap-iso div) -->
+<div class="bootstrap-">
+ <div class="container-fluid">
+  <div class="row">
+   <div class="col-md-6 col-sm-6 col-xs-12">
+       
+     <div class="form-group ">
+		      
+      <label class="control-label requiredField" for="text">
+       Login
+       <span class="asteriskField">
+        
+       </span>
+      </label>
+      
+      <div class="input-group">
+       <div class="input-group-addon">
+        <i class="fa fa-odnoklassniki">
+        </i>
+       </div>
+      
+       <input class="form-control" id="login" name="login" type="text"/>
+      </div>
+     </div>
+    
+     <div class="form-group ">
+
+      <label class="control-label requiredField" for="password">
+       Senha
+       <span class="asteriskField">
+        *
+       </span>
+      </label>
+      
+      <div class="input-group">
+       <div class="input-group-addon">
+        <i class="fa fa-building">
+        </i>
+       </div>
+
+       <input class="form-control" id="senha" name="senha" type="password"/>
+      </div>
+     </div>
+
+     <div class="form-group ">
+      <label class="control-label requiredField" for="nome-da-empresa">
+       Nome da Empresa
+       <span class="asteriskField">
+        *
+       </span>
+      </label>
+
+      <div class="input-group">
+       <div class="input-group-addon">
+        <i class="fa fa-building">
+        </i>
+       </div>
+
+       <input class="form-control" id="nomeemp" name="nomeemp" type="text"/>
+      </div>
+     </div>
+
+     <div class="form-group ">
+      <label class="control-label requiredField" for="nome-do-funcionario">
+       Nome do Funcionário
+       <span class="asteriskField">
+        *
+       </span>
+      </label>
+
+      <div class="input-group">
+       <div class="input-group-addon">
+        <i class="fa fa-building">
+        </i>
+       </div>
+
+       <input class="form-control" id="nomefunc" name="nomefunc" type="text"/>
+      </div>
+     </div>
+
+	 <div class="form-group ">
+      <label class="control-label requiredField" for="cargo">
+       Cargo
+       <span class="asteriskField">
+        *
+       </span>
+      </label>
+
+      <div class="input-group">
+       <div class="input-group-addon">
+        <i class="fa fa-building">
+        </i>
+       </div>
+
+       <input class="form-control" id="cargo" name="cargo" type="text"/>
+      </div>
+     </div>
+	 
+	 <div class="form-group ">
+      <label class="control-label requiredField" for="email">
+       E-mail
+       <span class="asteriskField">
+        *
+       </span>
+      </label>
+
+      <div class="input-group">
+       <div class="input-group-addon">
+        <i class="fa fa-at">
+        </i>
+       </div>
+
+       <input class="form-control" id="email" name="email" type="e-mail"/>
+      </div>
+     </div>
+
+     <div class="form-group">
+      <div>
+		<div class="button-center">       
+       <button class="btn btn-info " name="submit" type="submit">
+        Enviar
+       </button>
+      </div>
+     </div>
+    
+   </div>
+  </div>
+ </div>
+</div>
+
+</div>
+</div>
+
+
+</form>
+
+</body>
+</html>
