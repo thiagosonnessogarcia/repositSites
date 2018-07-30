@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!-- This file has been downloaded from Bootsnipp.com. Enjoy! -->
+    <title>Cadastro | AS PHOTOGRAFY</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+        .colorgraph {
+  height: 5px;
+  border-top: 0;
+  background: #c4e17f;
+  border-radius: 5px;
+  background-image: -webkit-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+  background-image: -moz-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+  background-image: -o-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+  background-image: linear-gradient(to right, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+}
+    </style>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+</head>
+<body background="C:\Users\thiag\Desktop\Templates Prontos\ASPhofografy\img\imagem1.jpg">
+<div class="container">
+
+<div class="row">
+    <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+		<form role="form">
+			<h1><small><font color="white">Ficha de Cadastramento AS Photografy	</font></small></h1>
+			<hr class="colorgraph">
+            <div class="form-group">
+    			<input type="text" name="required" id="nome" maxlength="30" class="form-control input-lg" placeholder="Nome Completo" tabindex="3" required >
+			</div>
+			<div class="row">
+            	<div class="col-xs-5 col-sm-5 col-md-5">
+                
+					<div class="form-group">
+                        <input type="number" name="required" id="dn" maxlength="6" class="form-control input-lg" placeholder="Data de Nascimento" tabindex="1" required>
+					</div>
+				</div>
+				<div class="col-xs-3 col-sm-3 col-md-3">
+					<div class="form-group">
+						<input type="number" name="required" id="idade" maxlength="2" class="form-control input-lg" placeholder="Idade" tabindex="2" required>
+					</div>
+				</div>
+                <div class="col-xs-4 col-sm-4 col-md-4">
+    				<div class="form-group">
+					    <select id="estadocivil" name="required"  class="form-control input-lg" tabindex="2" required>
+                            <option value="">Estado Cívil</option>
+                            <option value="Casado(a)">Casado(a)</option>
+                            <option>Divorciado(a)</option>
+                            <option>Solteiro(a)</option>
+							<option>Namorando</option>
+							<option>Viúvo(a)</option>
+                        </select>
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<input type="text" name="required" id="endereco" maxlength="50" class="form-control input-lg" placeholder="Endereço" tabindex="3" required>
+			</div>
+			<div class="form-group">
+				<input type="email" name="required" id="email" maxlength="35" class="form-control input-lg" placeholder="E-mail" tabindex="4" required>
+			</div>
+            <div class="row">
+                <div class="col-xs-5 col-sm-5 col-md-5">
+					<div class="form-group">
+                        <select id="ensaio" name="required"  class="form-control input-lg"  tabindex="2" required>
+                            <option>Selecione o ensaio</option>
+                            <option value="Externo">Externo</option>
+                            <option value="Interno">Interno</option>
+							<option value="Internoc">Interno Estúdio</option>
+                        </select>
+					</div>
+				</div>
+				<div class="col-xs-4 col-sm-4 col-md-4">
+					<div class="form-group">
+						<select id="tipo" name="required"  class="form-control input-lg"  tabindex="2"required>
+                            <option value="">Tipo</option>
+							<option value="amigos">Amigas(os)</option>
+							<option value="bebes">Bebês</option>
+							<option value="casal">Casal</option>
+							<option value="casamento">Casamento</option>
+                            <option value="sensual">Sensual(a)</option>
+                            <option value="noivos">Noivado</option>							
+                        </select>
+					</div>
+				</div>
+            </div>
+            <div class="row">
+                <div class="col-xs-5 col-sm-5 col-md-5">
+    				<div class="form-group">
+                        <select id="turno" name="required"  class="form-control input-lg"  tabindex="2"required>
+                            <option value="">Turno</option>
+                            <option value="Manhã">Manhã</option></option>
+                            <option value="Tarde">Tarde</option>
+                            <option value="Noite">Noite</option>
+                    </select>
+					</div>
+				</div>
+				<div class="col-xs-4 col-sm-4 col-md-4">
+					<div class="form-group">
+						<input type="date" name="required" id="data" class="form-control input-lg" placeholder="Data" tabindex="2" required>
+					</div>
+				</div>
+            </div>
+			
+			<div class="row">
+				<div class="col-xs-6 col-sm-6 col-md-6">
+					<div class="form-group">
+						<input type="password" name="required" id="password" maxlength="10" class="form-control input-lg" placeholder="Senha" tabindex="5" required>
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-6 col-md-6">
+					<div class="form-group">
+						<input type="password" name="required" id="password_confirmation" maxlength="10" class="form-control input-lg" placeholder="Confirmar Senha" tabindex="6" required>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-3 col-sm-3 col-md-3">
+					<span class="button-checkbox">
+						<button type="button" class="btn" data-color="info" tabindex="7">Aceito</button>
+                        <input type="checkbox" name="required" id="t_and_c" class="hidden" value="1" required>
+					</span>
+				</div>
+				<div class="col-xs-9 col-sm-9 col-md-9">
+				<font color="white">Ao clicar <strong class="label label-primary">Registrar</strong>, voce aceita os <a href="#" data-toggle="modal" data-target="#t_and_c_m">Termos e condições</a> sobre imagens e fotos tiradas, incluindo utilização de propaganda.
+				</div>
+			</div>
+			</font>
+			<hr class="colorgraph">
+			<div class="row">
+				<div class="col-xs-6 col-md-6"><input type="submit" value="Register" class="btn btn-primary btn-block btn-lg" tabindex="7"></div>
+				<div class="col-xs-6 col-md-6"><a href="#" class="btn btn-success btn-block btn-lg">Entrar</a></div>
+			</div>
+		</form>
+	</div>
+</div>
+
+<!-- Contrato -->
+<div class="modal fade" id="t_and_c_m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<h4 class="modal-title" id="myModalLabel">Termos e Condições</h4>
+			</div>
+			<div class="modal-body">
+				<p>Pelo presente Instrumento Particular de Prestação de Serviços Fotográficos, de um lado:
+i)Sr(a). Fulana de tal Silva residente e domiciliado na Av. Tal tal , nºXXX apto XXX. Bairro tal tal Porto Alegre., Estado RS , portador do documento de identidade tipo RG, nº XXXXXXXXXX, inscrito no CPF sob o nº 0XXXXXXXXX, com contatos telefônicos de n° Cel XXXXXXXX fone XXXXXXXX
+doravante denominado exclusivamente CONTRATANTE e, de outro lado;
+ii) Me. xxxxxxxxxxx Fotografia, situa à avenida tal tal, número XXX, bairro XXXXXXXX, Porto Alegre – RS, portador do CNPJ de número XX.XXX.XXX/XXX-XX doravante denominado exclusivamente CONTRATADO, têm entre si, justos e contratados, as cláusulas e condições que seguem:</p>
+				<p>Cláusula Primeira – Objeto
+O presente instrumento se destina à regulamentação da prestação de serviços fotográficos a serem realizados pelo CONTRATADO, em favor do CONTRATANTE, sendo certo que as especificações referentes ao local, data, horário de início, forma e custos da execução dos serviços contratados serão como segue:
+Art.1º – Eventos Contratados:
+Este instrumento refere-se à contratação dos seguintes serviços:
+Cerimônia Civil: Não Contratado
+Data: Não Contratado
+Local Horário de Início: Não Contratado
+Dia da Noiva (fotos no salão): Contratado
+Local: XXXXXXXXXXXXXXXX – Porto Alegre.
+Data: XX de XXXXX de 2010
+Horário de Início: XX
+Cerimônia Religiosa: Contratado
+Local: XXXXXXXXXXXXXXXX – Porto Alegre.
+Data: XX de XXXXX de 2010
+Horário de Início: XX
+Recepção: Contratado
+Local: XXXXXXXXXXXXXXXX – Porto Alegre.
+Data: XX de XXXXX de 2010
+Horário de Início: XX
+Art.2º – Tipo de Serviço Contratado
+– Fotografia por Allan Elly + segundo fotógrafo + assistente;
+– O serviço contratado é o de cobertura fotográfica do(s) evento(s) acima descrito e a entrega do material final na forma de Livro de Casamento, Modelo 24×30 com um total de 50(cinquenta) páginas e com um mínimo de 100(cem) fotografias;
+– Ensaio antes do casamento e sessão após o casamento (Trash The Dress)
+– DVD com todas as fotos em alta resolução;
+Art.3º – Valores
+Fica justo e acertado o valor total de R$ XX.X00,00(XXX mil e XXXX reais) para a execução dos que o pagamento será feito como descrito abaixo:
+À vista no ato da contratação.</p>
+				<p>Cláusula Segunda – Responsabilidades
+O CONTRATADO se responsabilizará, exclusivamente, pela qualidade da prestação dos serviços contratados nas condições em que forem pactuados, cumprindo ao mesmo o comparecimento no local, data e hora combinados, com sua equipe, e munidos dos equipamentos necessários à realização dos serviços a serem executados.
+§ 1º As especificações constantes na cláusula primeira do presente instrumento são de inteira responsabilidade do CONTRATANTE e, havendo necessidade de se promover eventuais alterações no pactuado, o CONTRATANTE deverá comunicar ao CONTRATADO, de maneira expressa e por escrito, com antecedência mínima de 10 (dez) dias úteis, acerca das novas condições a serem observadas.
+§ 2º O CONTRATADO não se responsabilizará pela eventual impossibilidade no atendimento às necessidades do CONTRATANTE caso ocorram alterações fora do prazo mencionado no § 1º da presente cláusula em referência ao local, data e horário da execução dos serviços contratados, sendo certo que a viabilidade de sua execução será condicionada à disponibilidade de pessoal e equipamentos.
+§3º O CONTRATADO não se responsabilizará por problemas causados por fenômenos da natureza e/ou terceiros que, de qualquer modo, venham a prejudicar o bom andamento do serviço contratado.
+§4º Fica acertado que, em caso de motivo de força maior justificável que impossibilitem a pessoa do CONTRATADO estar presente na data do evento para a cobertura do mesmo, o CONTRATANTE já autoriza o CONTRATADO a substituir sua presença por outro profissional do mesmo nível técnico e portando equipamentos semelhantes.
+§5º Em caso do evento perdurar por além de 04(quatro) horas, o CONTRATANTE desde já autoriza ao CONTRATADO, bem como todos os componentes de sua equipe, a utilizar-se do mesmo serviço de alimentação que, por acaso, estiver sendo servido aos convidados.
+§6º Fica desde já acertado que, caso existam quaisquer taxas e valores a serem pagos aos locais do evento para que o CONTRATADO possa exercer suas funções, que as mesmas correrão exclusivamente por conta do CONTRATANTE, não cabendo ao CONTRATADO nenhuma responsabilidade sobre o valor a ser pago.
+§7º O contratado fica isento de quaisquer responsabilidades caso não consiga exercer seu trabalho com seus equipamentos habituais, em virtude de proibições que venham a ocorrer por parte da administração do(s) local(s) onde ocorrerá(ão) o(s) evento(s).</p>
+				<p>Cláusula Terceira – Valores e Condições de Pagamento
+Os valores e condições de pagamento contratados, tanto para pacote de fotografias, fotos avulsas, álbuns, encadernações, Macking-Of , locação de estúdio e demais serviços, estarão descritos no Artigo 3º da Cláusula primeira deste instrumento.
+§ 1º Os valores contratados e descritos no Artigo supracitado ao presente instrumento terão validade por até 60 (sessenta) dias após a realização do evento, findo o qual poderá ser reajustado conforme valores de mercado praticados à época.
+§ 2º O presente instrumento é feito em caráter irrevogável, ficando estabelecido que no caso do CONTRATANTE e/ou CONTRATADO necessitar o cancelamento ou rescisão do presente seja por qual motivo for, incorrerá nas seguintes penalidades:
+A-) Multa de 25%(vinte e cinco por cento) sobre o valor total referente a este instrumento, devidamente atualizado, se houver comunicado expresso e por escrito ao CONTRATANTE e/ou CONTRATADO, com antecedência de 120(cento e vinte) dias da data do evento.
+B-) Multa de 50%(cinquenta por cento) sobre o valor total referente a este instrumento, devidamente atualizado, se houver comunicado expresso e por escrito ao CONTRATANTE e/ou CONTRATADO, com antecedência inferior a 120(cento e vinte) dias da data do evento.
+§3º A responsabilidade pelo cancelamento dos serviços contratados em decorrência da aplicação do disposto junto ao § 2º da Cláusula Segunda do presente instrumento será imputada ao CONTRATANTE, sendo certo que o mesmo deverá arcar, nesta hipótese, com o pagamento das multas previstas nas alíneas “A” e “B” do § anterior.
+§4º Caso o total dos pagamentos já efetuados seja inferior ao montante das multas, o CONTRATANTE deverá complementar o valor na data da rescisão, visto que a multa estipulada se destina à cobertura de despesas diretas e indiretas relacionadas com o evento contratado, não podendo, portanto, ser utilizada pelo CONTRATANTE, ou por terceiros indicados, bem como não compensadas com eventuais novas datas ou eventos a serem prestados pelo CONTRATADO.
+§5º Caso tenha havido pagamento de valores superiores aos montantes da multa, o CONTRATADO realizará a devolução do saldo devidamente corrigido, nos termos do orçamento, contando-se tal correção do mês de recebimento até a data da efetiva restituição ou na forma de serviços a ser prestados ou fornecidos em futuro próximo, não superior a 120(cento e vinte) dias da rescisão. No caso do CONTRATANTE optar por fornecimento de serviços, fica desde já ajustado que os mesmos numerários que encontram-se em poder do CONTRATADO serão corrigidos utilizando-se os mesmos índices e formas descritos no parágrafo acima, e que os serviços serão cotados ao preço do dia
+Cláusula Quarta – Prazos de entrega
+§1° O CONTRATADO se obriga a entregar o cd com as fotos para escolha, no máximo, 30(trinta) dias úteis após a data do evento.
+§2° Assim que receberem o CD prova, o CONTRATANTE se obriga a devolver a lista com as fotografias escolhidas no prazo máximo de 30(trinta) dias do recebimento do mesmo, sob pena de multa de 10% (dez por cento) do valor do contrato, por mês de atraso.
+§3° Assim que receber a lista com as fotografias escolhidas, o CONTRATADO se obriga a editar o álbum em no máximo 30(trinta) dias úteis, a fim de que o CONTRATANTE possa aprovar e, assim, ser encaminhado para impressão.
+§ único: Quando da aprovação para impressão, o CONTRATANTE deverá fazer o pagamento de páginas e fotografias excedentes ao contratado, quando da existência dos mesmos.
+§4° Os prazos para a entrega do produto final, terá de respeitar o prazo de impressão, encadernação e transporte de terceiros, o que foge ao controle do CONTRATADO, não podendo, o mesmo, sofrer penalização de qualquer espécie pelos mesmos.</p>
+				<p>Cláusula Quinta – Disposições Finais
+§1° Os negativos das fotografias, cromos e arquivos digitais são de propriedade exclusiva do CONTRATADO e sua disponibilização ao CONTRATANTE não faz parte deste instrumento, cabendo, para tanto, solicitação de orçamento em separado.
+§2° O CONTRATANTE não se opõe quanto ao uso dos negativos e/ou arquivos digitais pelo CONTRATADO, uma vez que os mesmos fazem parte de seu novo ativo comercial, como também, podendo ser usados inclusive como amostras, na confecção de materiais de marketing pessoal – impresso e/ou digital – do CONTRATADO, bem como em concursos internos e externos, edições de livros e exposições.
+§3° Por se tratar de serviço e contrato certo, o CONTRATADO gozará de plena exclusividade dos mesmos, ficando desde já previamente ajustado e determinado a proibição de terceiros, mesmo até convidados, parentes ou amigos que venham a fazer quaisquer fotografias, com quaisquer tipos de equipamentos, dentro dos mesmos limites do evento e que venham – ao mesmo tempo – obstruir direta ou indiretamente o bom andamento dos trabalhos do CONTRATADO e/ou de sua equipe.
+§ único: O contratado não se responsabiliza por problemas na captação de imagens causados por terceiros – mesmo que convidados do evento – que estiverem fazendo fotografias e/ou filmagens no local, seja com que equipamento for.
+Todas e quaisquer questões que surjam em decorrência da execução dos termos do presente instrumento, ou que dele originarem, serão solucionadas amigavelmente entre as partes. Na impossibilidade de uma solução conciliatória, as partes elegem o foro da Comarca de Porto Alegre – RS, com exclusão de quaisquer outros por mais privilegiados que sejam ou que venham a ser.
+E por estarem assim justos e contratados, assinam o presente contrato – com um total de quatro folhas numeradas – em 02(duas) vias de igual teor e forma.
+Porto Alegre, 16 de Dezembro de 2010.
+XXXX
+CONTRATANTE
+xxxxxxxxxxxxxxxxxx
+CONTRATADO</p>
+			</div>
+<!-- Contrato FIM-->
+
+			
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" data-dismiss="modal">Aceito os Termos</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+</div>
+<script type="text/javascript">
+$(function () {
+    $('.button-checkbox').each(function () {
+
+        // Settings
+        var $widget = $(this),
+            $button = $widget.find('button'),
+            $checkbox = $widget.find('input:checkbox'),
+            color = $button.data('color'),
+            settings = {
+                on: {
+                    icon: 'glyphicon glyphicon-check'
+                },
+                off: {
+                    icon: 'glyphicon glyphicon-unchecked'
+                }
+            };
+
+        // Event Handlers
+        $button.on('click', function () {
+            $checkbox.prop('checked', !$checkbox.is(':checked'));
+            $checkbox.triggerHandler('change');
+            updateDisplay();
+        });
+        $checkbox.on('change', function () {
+            updateDisplay();
+        });
+
+        // Actions
+        function updateDisplay() {
+            var isChecked = $checkbox.is(':checked');
+
+            // Set the button's state
+            $button.data('state', (isChecked) ? "on" : "off");
+
+            // Set the button's icon
+            $button.find('.state-icon')
+                .removeClass()
+                .addClass('state-icon ' + settings[$button.data('state')].icon);
+
+            // Update the button's color
+            if (isChecked) {
+                $button
+                    .removeClass('btn-default')
+                    .addClass('btn-' + color + ' active');
+            }
+            else {
+                $button
+                    .removeClass('btn-' + color + ' active')
+                    .addClass('btn-default');
+            }
+        }
+        // Initialization
+        function init() {
+
+            updateDisplay();
+
+            // Inject the icon if applicable
+            if ($button.find('.state-icon').length == 0) {
+                $button.prepend('<i class="state-icon ' + settings[$button.data('state')].icon + '"></i> ');
+            }
+        }
+        init();
+    });
+});
+</script>
+</body>
+</h
